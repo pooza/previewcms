@@ -39,11 +39,8 @@ jobs:
         run: npm ci
       - name: Build with VuePress
         run: npm run build
+        run: bash bin/replace_path.sh
       - name: fix path
-        run: |
-            ls -l
-            echo i am chamara
-            find~.vuepress/dist/hitowa -name'*.html'
       - name: Upload artifact
         uses: actions/uplaod-pages-artifact@1
         with: 
