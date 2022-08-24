@@ -1,0 +1,24 @@
+{
+  "name": "hitowacms",
+  "version": "1.0.0",
+  "description": "--- home: true heroImage: /images/new.png actionText: Get Started → actionLink: /categories/ features:",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vuepress": "^1.9.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chamara8901/mycms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chamara8901/mycms/issues"
+  },
+  "homepage": "https://github.com/chamara8901/mycms#readme"
+}
