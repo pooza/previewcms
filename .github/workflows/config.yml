@@ -1,3 +1,4 @@
+
 # Sample workflow for building and deploying a Next.js site to GitHub Pages
 #
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
@@ -40,21 +41,25 @@ jobs:
       - name: Build with VuePress
         run: npm run build
       - name: fix path
-        run: bash bin/replace_path.sh
+        run: |
+          ls -l
+          echo i am chramara
+          find dist/ -type d -name 'httpdocs'
+          find ~.vuepress/dist/lessons -name '*.html'
       - name: Upload artifact
-        uses: actions/uplaod-pages-artifact@1
-        with: 
-           path: ./.vuepress/dist
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./.vuepress/dist
+      
 
-
-  #Deployment
+  # Deployment job
   deploy:
+    environment:
       name: github-pages
-      url: ${{steps.deployment.outputs.pages_url}}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build 
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1      
-          
+        uses: actions/deploy-pages@v1
