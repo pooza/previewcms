@@ -41,7 +41,7 @@ jobs:
       - name: Build with VuePress
         run: npm run build
       - name: fix path
-        run: |
+      - run: |
           ls -l
           find ~.vuepress/dist/hitowa -name '*.html'
       - name: Upload artifact
