@@ -45,7 +45,7 @@ jobs:
           ls -l
           echo i am chramara
           find .vuepress/dist/ -type d -name 'httpdocs'
-          find ~.vuepress/dist/lessons -name '*.html'
+          find ~.vuepress/dist/hitowa -name '*.html'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
