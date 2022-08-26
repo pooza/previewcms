@@ -44,7 +44,7 @@ jobs:
         run: |
           ls -l
           echo i am chramara
-          find dist/ -type d -name 'httpdocs'
+          find .vuepress/dist/ -type d -name 'httpdocs'
           find ~.vuepress/dist/lessons -name '*.html'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
