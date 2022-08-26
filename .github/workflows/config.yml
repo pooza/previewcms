@@ -39,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build with VuePress
-        run: npm run build
+      - run: npm run build
       - name: fix path
         run: |
           ls -l
