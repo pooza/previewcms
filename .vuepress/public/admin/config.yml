@@ -10,7 +10,7 @@ display_url: https://exquisite-panda-66e029.netlify.app
 collections:
   - name: pages
     label: Pages
-    folder: "docs"
+    folder: "hitowa"
     create: true
     slug: "{{slug}}"
     preview_path: docs/{{year}}/{{month}}/{{title}}
