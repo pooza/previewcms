@@ -13,6 +13,7 @@ collections:
     folder: "hitowa"
     create: true
     slug: "{{slug}}"
+    preview_path: hitowa/{{year}}/{{month}}/{{title}}
     editor:
       preview: true
 
