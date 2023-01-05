@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev",
-    "build": "vuepress build .vuepress/hitowa"
+    "build": "vuepress build dist/hitowa"
   },
   "keywords": [],
   "author": "",
