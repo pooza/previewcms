@@ -2,11 +2,11 @@ backend:
   name: git-gateway
   branch: master
 media_folder: ".vuepress/public/"
-publish_mode: editorial_workflow 
+publish_mode: editorial_workflow
 preview_context: deploy-preview
-show_preview_links: true 
+show_preview_links: true
 public_folder: "../../"
-display_url: https://exquisite-panda-66e029.netlify.app
+display_url: https://dancing-haupia-24cd89.netlify.app/
 collections:
   - name: pages
     label: Pages
@@ -25,4 +25,3 @@ collections:
       - {label: "Featured Image", name: "image", widget: "image", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime", required: false}
 
-     
